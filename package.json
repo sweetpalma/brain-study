@@ -1,0 +1,31 @@
+{
+	"name": "brain-study",
+	"version": "1.0.0",
+	"license": "GPL-3.0-or-later",
+	"author": "SweetPalma",
+	"scripts": {
+		"prepare": "husky install",
+		"format-check": "prettier ./src --check",
+		"format": "prettier ./src --write",
+		"example": "ts-node --cwd ./src/examples --"
+	},
+	"lint-staged": {
+		"*.{ts,json}": "prettier --write --ignore-unknown"
+	},
+	"dependencies": {
+		"brain.js": "^2.0.0-beta.16",
+		"lodash": "^4.17.21"
+	},
+	"devDependencies": {
+		"@tsconfig/recommended": "^1.0.1",
+		"@types/lodash": "^4.14.186",
+		"@types/node": "^18.7.23",
+		"gpu.js": "^2.15.2",
+		"husky": "^8.0.1",
+		"lint-staged": "^13.0.3",
+		"prettier": "^2.7.1",
+		"ts-node": "^10.9.1",
+		"tsconfig-paths": "^4.1.0",
+		"typescript": "^4.8.4"
+	}
+}

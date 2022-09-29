@@ -1,0 +1,16 @@
+{
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "ts-node": {
+  	"require": ["tsconfig-paths/register"],
+  	"files": true
+  },
+  "compilerOptions": {
+  	"lib": ["es2018"],
+  	"baseUrl": ".",
+  	"paths": { "~/*": ["./src/*"] },
+  	"typeRoots": ["./node_modules/@types", "./src"],
+  	"exactOptionalPropertyTypes": true,
+  	"noImplicitOverride": true,
+  	"resolveJsonModule": true
+  },
+}
